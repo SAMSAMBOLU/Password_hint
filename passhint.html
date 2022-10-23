@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="input1">
+    <button id="btn" onclick="show()">hide</button>
+
+    <script>
+       let input1=document.getElementById('input1')
+       let isShow=false
+       let button=document.getElementById('btn')
+
+       function show() {
+        if (isShow==false) {
+            input1.type='text'
+            button.innerText='hide'
+            isShow=true
+        } else if(isShow==true){
+            input1.type='password'
+            button.innerText='show'
+            isShow=false
+        }
+       }
+    </script>
+</body>
+</html>
